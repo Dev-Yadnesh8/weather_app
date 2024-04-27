@@ -1,6 +1,6 @@
 import 'package:geolocator/geolocator.dart';
 
-String apiKey = "079a6faa536ebb0dae72eb0a2d4083fd";
+String apiKey = "Your_api_key";
 
 /// Determine the current position of the device.
 ///
