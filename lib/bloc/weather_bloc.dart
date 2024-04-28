@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:meta/meta.dart';
 import 'package:weather/weather.dart';
 import 'package:weather_app/data/my_data.dart';
 
@@ -18,9 +17,9 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
         print("Weather=$weather");
         emit(WeatherLoadedState(weather));
 
-      }catch(e){
-        print("Error--$e");
-        emit(WeatherErrorState());
+      }catch(error){
+        print("Error--$error");
+        emit(WeatherErrorState(error.toString()));
       }
     });
   }

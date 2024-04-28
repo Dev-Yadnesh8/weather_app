@@ -302,7 +302,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     );
                   }else if(state is WeatherErrorState){
-                    return const Center(child: Text("Error Occurred!!",style: TextStyle(color: Colors.white,fontSize: 30),));
+                    return const Center(child: Text("Oops! check your internet connection",style: TextStyle(color: Colors.white,fontSize: 26),));
                   }else{
                     return Container();
                   }
